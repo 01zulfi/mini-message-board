@@ -1,8 +1,74 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  color: black;
+  letter-spacing: 1px;
 }
 
 a {
-  color: #00B7FF;
+  font-size: 20px;
+  color: rgb(78, 78, 78);
+}
+
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+div.message {
+  box-shadow: 0px 8px 8px rgb(0 0 0 / 15%);
+  padding: 0.7rem 1rem;
+  margin: 1rem 0rem;
+  border-radius: 7px;
+  border-left: thick solid gray;
+}
+
+div.message:hover {
+  outline: 1px solid gray;
+}
+
+p.date {
+  color: rgb(75, 75, 75);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  border-left: thick solid gray;
+  box-shadow: 0px 8px 8px rgb(0 0 0 / 15%);
+  border-radius: 5px;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+input,
+textarea {
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid gray;
+}
+
+form button {
+  align-self: flex-start;
+  padding: 1rem;
+}
+
+form button:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 680px) {
+  body {
+    padding: 10px;
+  }
 }

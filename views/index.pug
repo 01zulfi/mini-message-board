@@ -1,10 +1,11 @@
 extends layout
 
 block content
-  a(href="/new") New message 
+  a(href="/new") New Message 
   section 
     each message in messages
-      div
-        h3=message.text 
-        p=message.user
-        p=`${message.added.toLocaleTimeString()}  ${message.added.toDateString()}`
+      div.message
+        h3= message.text 
+        p by   
+          em= message.user
+        p.date= `${message.added.toLocaleTimeString()}  ${message.added.toDateString()}`
