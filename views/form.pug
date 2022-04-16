@@ -1,0 +1,11 @@
+extends layout 
+
+block content 
+    form(method="POST" action="/new") 
+        div 
+            label(for="name-input") Your name: 
+            input(type="text" id="name-input" name="nameInput" required)
+        div 
+            label(for="message-input") Your message:
+            textarea(name="messageInput" cols="30" rows="10" id="message-input" required) 
+        button(type="submit") Submit
